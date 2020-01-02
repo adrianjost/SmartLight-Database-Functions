@@ -3,7 +3,7 @@
 	"author": "Adrian Jost",
 	"version": "3.0.0",
 	"license": "MIT",
-	"description": "SmartLight V3 Cloud Functions",
+	"description": "SmartLight V3 Cloud Firestore Functions",
 	"engines": {
 		"node": "10"
 	},

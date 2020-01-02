@@ -26,6 +26,10 @@ function handleUnitChange(change) {
 	return Promise.all(lampUpdates);
 }
 
-exports = module.exports = functions.firestore
-	.document("units/{unitId}")
+exports = module.exports = functions
+	.runWith({
+		timeoutSeconds: 30,
+		memory: "128MB",
+	})
+	.firestore.document("units/{unitId}")
 	.onUpdate(handleUnitChange);
