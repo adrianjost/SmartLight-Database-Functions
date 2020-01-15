@@ -1,1 +1,1 @@
-exports["populateGroupState"] = require("./functions/populateGroupState.function.js")
+exports["populateGroupState"] = require("./functions/populateGroupState.function.js");
