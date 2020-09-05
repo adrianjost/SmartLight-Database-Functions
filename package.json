@@ -14,6 +14,7 @@
 		"serve": "firebase serve --only functions",
 		"shell": "firebase experimental:functions:shell",
 		"deploy:populateGroupState": "firebase deploy --only functions:populateGroupState",
+		"deploy:cleanupUserDelete": "firebase deploy --only functions:cleanupUserDelete",
 		"deploy": "run-s deploy:*"
 	},
 	"dependencies": {
