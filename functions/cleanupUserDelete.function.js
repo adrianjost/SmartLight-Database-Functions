@@ -16,10 +16,7 @@ async function handleUserDelete({ uid }) {
 	await batch.commit();
 	console.log(`deleted ${snapUnits.docs.length} units`);
 	console.log(`deleted ${snapStates.docs.length} states`);
-	await db
-		.collection("users")
-		.doc(uid)
-		.delete();
+	await db.collection("users").doc(uid).delete();
 	console.log(`deleted user ${uid}`);
 }
 

@@ -18,10 +18,7 @@ function handleUnitChange(change) {
 	}
 
 	const lampUpdates = unitAfter.lamps.map((lampId) =>
-		db
-			.collection("units")
-			.doc(lampId)
-			.update({ state: stateAfter })
+		db.collection("units").doc(lampId).update({ state: stateAfter })
 	);
 	return Promise.all(lampUpdates);
 }
