@@ -8,8 +8,8 @@ branches:
     - master
 
 install:
-  - yarn global add firebase-tools
-  - yarn install --frozen-lockfile
+  - npm i -g firebase-tools
+  - npm ci
 
 script:
   - npm run lint
@@ -21,4 +21,4 @@ deploy:
   on:
     branch: master
 
-cache: yarn
+cache: npm
