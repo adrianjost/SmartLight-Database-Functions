@@ -1,14 +1,4 @@
 pull_request_rules:
-  - name: automatic merge for Greenkeeper pull requests on master
-    conditions:
-      - author=greenkeeper[bot]
-      - label~=greenkeeper
-      - status-success~=Travis CI
-      - status-success~=WIP
-    actions:
-      merge:
-        method: squash
-        strict: true
   - name: automatic merge for Dependabot pull requests on master
     conditions:
       - author=dependabot[bot]

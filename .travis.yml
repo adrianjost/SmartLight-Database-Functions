@@ -6,7 +6,6 @@ node_js:
 branches:
   only:
     - master
-    - /^greenkeeper/.*$/
 
 install:
   - yarn global add firebase-tools
