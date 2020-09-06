@@ -21,7 +21,6 @@ async function handleUserDelete({ uid }) {
 		.doc(uid)
 		.delete();
 	console.log(`deleted user ${uid}`);
-
 }
 
 exports = module.exports = functions.auth.user().onDelete(handleUserDelete);
