@@ -18,7 +18,7 @@
 		"deploy": "run-s deploy:*"
 	},
 	"dependencies": {
-		"firebase-admin": "^9.4.2",
+		"firebase-admin": "^9.8.0",
 		"firebase-functions": "^3.13.0"
 	},
 	"devDependencies": {
