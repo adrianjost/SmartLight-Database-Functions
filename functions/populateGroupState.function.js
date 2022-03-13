@@ -24,6 +24,7 @@ function handleUnitChange(change) {
 }
 
 exports = module.exports = functions
+	.region("europe-west1")
 	.runWith({
 		timeoutSeconds: 30,
 		memory: "128MB",
