@@ -5,6 +5,7 @@ on:
       - main
 jobs:
   deploy_to_firebase:
+    name: Deploy to Firebase
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
@@ -13,7 +14,6 @@ jobs:
         run: |
           npm ci
           npm i -g firebase-tools
-          npm run build
       - name: Deploy to Firebase
         run: npm run deploy
         env:
