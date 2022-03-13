@@ -1,7 +1,5 @@
 # SmartLight Firebase Database Functions
 
-[![Build Status](https://travis-ci.com/adrianjost/SmartLight-Database-Functions.svg?branch=master)](https://travis-ci.com/adrianjost/SmartLight-Database-Functions)
-
 ## Setup
 
 1. install NPM & Node

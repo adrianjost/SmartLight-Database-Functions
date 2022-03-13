@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"description": "SmartLight V3 Cloud Firestore Functions",
 	"engines": {
-		"node": "10"
+		"node": "16"
 	},
 	"scripts": {
 		"lint": "run-s lint:*",
@@ -18,8 +18,8 @@
 		"deploy": "run-s deploy:*"
 	},
 	"dependencies": {
-		"firebase-admin": "^9.4.2",
-		"firebase-functions": "^3.13.0"
+		"firebase-admin": "^10.0.2",
+		"firebase-functions": "^3.18.1"
 	},
 	"devDependencies": {
 		"eslint": "^7.16.0",

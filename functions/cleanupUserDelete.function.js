@@ -20,4 +20,7 @@ async function handleUserDelete({ uid }) {
 	console.log(`deleted user ${uid}`);
 }
 
-exports = module.exports = functions.auth.user().onDelete(handleUserDelete);
+exports = module.exports = functions
+	.region("europe-west1")
+	.auth.user()
+	.onDelete(handleUserDelete);
