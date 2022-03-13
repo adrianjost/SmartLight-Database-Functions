@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"description": "SmartLight V3 Cloud Firestore Functions",
 	"engines": {
-		"node": "10"
+		"node": "16"
 	},
 	"scripts": {
 		"lint": "run-s lint:*",
